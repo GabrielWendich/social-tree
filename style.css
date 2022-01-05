@@ -1,0 +1,119 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+}
+/* font-family: 'Poppins', sans-serif; */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--purple);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#profile-picture {
+    height: 12.5rem;
+    width: 12.5rem;
+    padding: 3.5px;
+    object-fit: cover;
+    border: solid var(--purple) 3px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    /* clip-path: circle(50% at 50% 50%); */
+
+    margin-bottom: .9375rem;
+}
+
+#tag-name {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2.0625rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4.5rem;
+}
+
+#link-tree li{
+    border: var(--purple) solid 2px;
+    border-radius: 4px;
+    width: 20.375rem;
+    height: 3.0625rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#link-tree li:hover {
+    color: var(--body-bg-color);
+    background-color: var(--purple);
+    transition: all ease .3s;
+}
+
+#social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8125rem;
+}
+
+#social-links a {
+    width: 26px;
+    height: 26px;
+    box-sizing: border-box;
+}
+
+#social-links a:hover {
+    background-color: #d2c5df;
+    border: var(--purple) solid 2px;
+    border-radius: 4px;
+    transition: all ease .3s;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 720px) {
+    main {
+        margin: 10% auto;
+        transition: all ease .3s;
+    }
+    #link-tree li {
+        width: 16.375rem;
+        transition: all ease .3s;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 960px) {
+    main {
+        margin: 8% auto;
+        transition: all ease .3s;
+    }
+}
+
+@media (min-width: 960px) {
+    main {
+        margin: 5% auto;
+        transition: all ease .3s;
+    }
+}
